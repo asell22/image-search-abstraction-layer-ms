@@ -1,0 +1,23 @@
+{
+  "name": "image-search-abstrlayer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asell22/image-search-abstraction-layer-ms.git"
+  },
+  "author": "Alex Sell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asell22/image-search-abstraction-layer-ms/issues"
+  },
+  "homepage": "https://github.com/asell22/image-search-abstraction-layer-ms#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "request": "^2.69.0"
+  }
+}

@@ -2,8 +2,28 @@
 <html>
     <head>
         <title>Image Search Abstraction Layer</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Image Search Abstraction Layer</h1>
+        <div class="container">
+           <h1>Image Search Abstraction Layer</h1>
+           <div class="example">
+               <h3>Example Usage:</h3>
+               <code>https://abstract-image-search-asell22.herokuapp.com/api/imagesearch/cats%20lol</code>
+               <p>This url searches for images related to the query 'cats lol'. 10 images are sent back in JSON format.</p>
+           </div>
+           <div class="example">
+               <h3>Example Usage:</h3>
+               <code>https://abstract-image-search-asell22.herokuapp.com/api/imagesearch/cats%20lol?offset=20</code>
+               <p>This url has a query string that retrieves different images. You can type in a different integer value for <code>offset</code>.</p>
+           </div>
+           <div class="example">
+               <h3>Example Usage:</h3>
+               <code>https://abstract-image-search-asell22.herokuapp.com/api/latest</code>
+               <p>This url browses the most recent search queries.</p>
+           </div>
+        </div>
+        
     </body>
 </html>

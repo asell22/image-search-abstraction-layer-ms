@@ -34,7 +34,11 @@ app.get('/api/imagesearch/:query', function(req, res) {
 });
 
 app.get('/api/latest', function(req, res) {
-    res.send(latest);
+    if (latest.length > 10) {
+        res.send(latest.slice(0,10))
+    } else {
+        res.send(latest);  
+    }
 });
 
 app.listen(process.env.PORT, process.env.IP, function() {

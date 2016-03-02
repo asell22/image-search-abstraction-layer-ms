@@ -12,7 +12,7 @@
   },
   "engines": {
     "node": "4.2.4"
-  }
+  },
   "author": "Alex Sell",
   "license": "ISC",
   "bugs": {

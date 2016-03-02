@@ -41,6 +41,6 @@ app.get('/api/latest', function(req, res) {
     }
 });
 
-app.listen(process.env.PORT, process.env.IP, function() {
+app.listen(process.env.PORT, function() {
    console.log('server running on', process.env.PORT); 
 });

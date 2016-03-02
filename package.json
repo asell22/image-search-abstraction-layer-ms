@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/asell22/image-search-abstraction-layer-ms#readme",
   "dependencies": {
+    "dotenv": "^2.0.0",
     "express": "^4.13.4",
     "request": "^2.69.0"
   }

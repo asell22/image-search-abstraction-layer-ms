@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/asell22/image-search-abstraction-layer-ms.git"
   },
+  "engines": {
+    "node": "4.2.4"
+  }
   "author": "Alex Sell",
   "license": "ISC",
   "bugs": {

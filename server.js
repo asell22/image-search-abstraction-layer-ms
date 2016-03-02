@@ -7,8 +7,9 @@ app.use(express.static('public'));
 
 app.get('/api/imagesearch/:query', function(req, res) {
     var query = req.params.query;
+    var offset = req.query.offset || 1;
     console.log('**********', query);
-    request('https://www.googleapis.com/customsearch/v1?start=11&key='+process.env.API_KEY+'&cx='+process.env.ENGINE_ID+'&q='+query+'&searchType=image&fileType=jpg&alt=json', function (error, response, body) {
+    request('https://www.googleapis.com/customsearch/v1?start='+offset+'&key='+process.env.API_KEY+'&cx='+process.env.ENGINE_ID+'&q='+query+'&searchType=image&fileType=jpg&alt=json', function (error, response, body) {
         if (!error && response.statusCode == 200) {
             var body = JSON.parse(body);
             console.log(body.items); // Show the HTML for the Google homepage. 
